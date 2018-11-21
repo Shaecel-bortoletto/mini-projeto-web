@@ -1,0 +1,168 @@
+
+ 
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('../img/pergaminho.jpg');
+
+  
+} 
+body{
+ 
+    margin:20;
+}
+
+
+
+
+
+
+/*Classe usada pelo o JS para fixar o menu*/
+.Fixar{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    top: 0;
+}
+h3{
+    color: #fff000;
+    text-align: center;
+}
+h2{
+    text-decoration: content: 
+    text-align: center;  
+}
+
+footer {
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px;
+     background-image: url('../img/connectedcity.png');
+    color:#ffffff;
+}
+
+
+
+.btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.btn{
+  font-family: arial;
+  font-size: 16px;
+  font-left:10px;
+  border:none;
+  padding:2px;
+  border-top: 2px;
+  max-width: 50%;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+  
+}
+.btn-green{
+  background:#0e48;
+  color:#fff000;
+  box-shadow:0 2px 0 #aeb3c4;
+  border-radius: 50px;
+}
+.btn-green:hover{
+    color:black;
+  background:#ff0;
+  box-shadow:0 2px 0#4286f4;
+  border-radius: 50%;
+}
+
+.btn-green:active, .btn-purple:active, .btn-red:active{
+  position:relative;
+  top:2px;
+  box-shadow:none;
+}
+
+/**submenu**/
+
+.btn-submenu{
+ background:0#4286f4;
+    color:#ffffff;
+  box-shadow:0 2px 0 aqua;
+  border-radius: 50%;
+}
+.btn-submenu:hover{
+    color: #000000;
+  background:aqua;
+  box-shadow:0 4px 0#ffffff;
+  border-radius: 100%;
+}
+.btn-submenu:active, .btn-green:active, .btn-red:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+/**portfolio**/
+.btn-portfolio{
+	background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('../img/program_cisco.jpg');
+  color:#000000;
+  box-shadow:0 1px 0 aqua;
+  border-radius: 50%;
+}
+.btn-portfolio:hover{
+    text-color:black;
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('../img/distribuição.jpg');;
+  box-shadow:0 1px 0#fff000;
+  border-radius: 50%;
+}
+
+
+
+/**
+* Exemplo de layout
+* @author - Marcio Roberto
+* Data 26/09/2018
+*/
+
+
+
+body{
+    font-family: sans-serif;
+}
+/*Divisão para as imagens*/
+.Layout{
+    height: 350px;
+    padding-top: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+}
+/*em = */
+.Layout p{
+    text-align: center;
+    color: #ff0;
+    font-size: 2.5em;
+    top: 20px;
+}
+
+.DivTexto{
+    background-color: #ffffff;
+}
+
+.Destaque{
+    padding: 150px 0px 150px 0px; /*box model*/
+    max-width: 1024px;
+    margin: 0 auto;/*centralizado*/
+}
+
+
+
+
+
+
+
+ 
+ 
+
+
+

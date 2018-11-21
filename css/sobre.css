@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+ 
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*Classe usada pelo o JS para fixar o menu*/
+.Fixar{
+    position: fixed;
+    padding: -10px;
+    top: 0;
+    z-index: 3;
+    top: 0;
+}
+h3{
+    color: #fff000;
+    text-align: center;
+}
+h2{
+    text-decoration: content;
+   text-align: center;
+}
+
+footer {
+	width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    background-image: url('../img/connectedcity.png');
+    color:#ffffff;
+}
+
+
+
+.btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.btn{
+  font-family: arial;
+  font-size:15px;
+  text-transform: uppercase;
+  font-weight:700;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+}
+.btn-green{
+  background:#0e48a5;
+  color:#aeb3c4;
+  box-shadow:0 2px 0 #aeb3c4;
+  border-radius: 50px;
+}
+.btn-green:hover{
+    color:black;
+  background:#aeb3c4;
+  box-shadow:0 4px 0#4286f4;
+  border-radius: 100%;
+}
+
+.btn-green:active, .btn-purple:active, .btn-red:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+
+/**submenu**/
+
+.btn-submenu{
+ background:0#4286f4;
+    color:#ffffff;
+  box-shadow:0 2px 0 aqua;
+  border-radius: 50%;
+}
+.btn-submenu:hover{
+    color: #000000;
+  background:aqua;
+  box-shadow:0 4px 0#ffffff;
+  border-radius: 100%;
+}
+.btn-submenu:active, .btn-green:active, .btn-red:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+/**portfolio**/
+.btn-portfolio{
+  background:transparent;
+  color:#aeb3c4;
+  box-shadow:0 2px 0 #aeb3c4;
+  border-radius: 50px;
+}
+.btn-portfolio:hover{
+    color:black;
+  background:aqua;
+  box-shadow:0 4px 0#000000;
+  border-radius: 100%;
+}
+
+
+
+/**
+* Exemplo de layout
+* @author - Marcio Roberto
+* Data 26/09/2018
+*/
+
+
+
+body{
+    font-family: sans-serif;
+}
+
+h2{
+    color:aqua;
+}
+
+p{
+text-align: justify;
+padding-left: 40px;
+padding-right: 40px; 
+}
+/*Divisão para as imagens*/
+.Layout{
+    height: 350px;
+    padding-top: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+}
+/*em = */
+.Layout p{
+    text-align: center;
+    color: #ff0;
+    font-size: 2.0em;
+    top: 20px;
+}
+
+.DivTexto{
+    background-color: #ffffff;
+}
+
+.Destaque{
+    padding: 150px 0px 150px 0px; /*box model*/
+    max-width: 1024px;
+    margin: 0 auto;/*centralizado*/
+}
+
+
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('../img/pergaminho.jpg');
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)),
+     url('../img/pergaminho.jpg');
+     color: aqua;
+}
+
+.menu ul ul {
+    position: relative;
+    visibility: hidden;
+
+}
+.menu ul li:hover ul{
+    visibility: visible;
+
+}
+
+.menu a:hover{
+    background-color: #f4f4f4;
+    color:#ffffff;
+}
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+.menu ul li ul li a{
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)),
+     url('../img/Slayt-Nasıl-Yapılır2.jpg');
+
+}
+
+.menu ul ul li {
+    background-color: #fff000;
+}
+
+label[for="bt_menu"]{
+    padding: -25px;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), 
+    url('../img/pergaminho.jpg');
+    color: aqua;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt_menu{
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+
+
+@media(max-width: 1024px){
+    label[for="bt_menu"]{
+    display: block;
+}
+.menu{
+    position:fixed;
+}
+
+.content-all{
+    display: none;
+}
+
+    
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    h1,h2,h3{
+    	font-size:14px;
+   }
+ 
+}
+
+
+
+@media(max-width: 720px){
+    label[for="bt_menu"]{
+    display: block;
+}
+.menu{
+    position:fixed;
+}
+
+.content-all{
+    display: none;
+}
+
+    
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+
+    p{
+    
+        font-size: 12px;
+    }
+    h1,h2,h3{
+    	font-size:14px;
+   }
+   
+}
+
+
+@media(max-width: 480px){
+    label[for="bt_menu"]{
+    display: block;
+}
+.menu{
+    position:fixed;
+}
+
+.content-all{
+    display: none;
+}
+
+    
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    h1,h2,h3{
+         font-size:14px;
+}
+
+}
+
+
+h4{
+    text-color:#ffffff;
+}
+
+html{
+background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('../img/pergaminho.jpg');
+
+  
+} 
+
+
+
+
+.Detalhes:after{/*atributo after (após o conteúdo)*/
+    content: '';/*content insere um conteúdo no css*/
+    color: #ff0000;
+    border: 5px solid transparent;
+    border-top-color: #e8e8e8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.btn{
+  font-family: arial;
+  font-size:15px;
+  text-transform: uppercase;
+  font-weight:700;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+}
+.btn-green{
+  background:#0e48a5;
+  color:#aeb3c4;
+  box-shadow:0 2px 0 #aeb3c4;
+  border-radius: 50px;
+}
+.btn-green:hover{
+    color:black;
+  background:#aeb3c4;
+  box-shadow:0 4px 0#4286f4;
+  border-radius: 100%;
+}
+
+.btn-green:active, .btn-purple:active, .btn-red:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+
+/**submenu**/
+
+.btn-submenu{
+ background:0#4286f4;
+    color:#ffffff;
+  box-shadow:0 2px 0 aqua;
+  border-radius: 50%;
+}
+.btn-submenu:hover{
+    color: #000000;
+  background:aqua;
+  box-shadow:0 4px 0#ffffff;
+  border-radius: 100%;
+}
+.btn-submenu:active, .btn-green:active, .btn-red:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+/**portfolio**/
+.btn-portfolio{
+  background:transparent;
+  color:#aeb3c4;
+  box-shadow:0 2px 0 #aeb3c4;
+  border-radius: 50px;
+}
+.btn-portfolio:hover{
+    color:black;
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('../img/program_cisco.jpg');
+  box-shadow:0 4px 0#fff000;
+  border-radius: 100%;
+}
+
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #032322;
+    font-size: .9em;
+    border-radius: 3px;
+    margin-bottom: 1px;
+
+}
+
+
+
+
+}
+/*Classe usada pelo o JS para fixar o menu*/
+.Fixar{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    top: 0;
+
+}
+
+
+header {
+    
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color:#ffffff;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin-top: 80px;
+
+}
+
+ header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+
+header p {
+    margin-bottom: 2em;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+/*
+SOBRE
+*/
+
+#sobre {
+    display: flex;
+    max-width: -20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    background-image: url('../img/connectedcity.png');
+    color: #02a9fc;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+
+}
+
+#sobre .botao {
+    background-color: #000000;
+    color: #233451;
+}
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color:aqua;
+   
+}
+
+#servicos div {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    position: relative;
+    background-color:transparent;
+}
+
+/*
+PORTFOLIO
+*/
+
+
+#portfolio{
+    display: inline-block;
+    align-items: center;
+    padding-top: 0px;
+    margin-top: 10px;
+    width: 50%;
+    color:transparent;
+    background-color:transparent;
+    margin-left: 100px;
+    position: relative;
+}
+
+
+
+
+
+#portfolio img {
+    width: 100%;
+}
+
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    
+    /*
+    SERVIÇOS
+    */
+    
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+        color: 
+    }
+    
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /*
+    PORTFOLIO
+    */
+    
+    #portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #portfolio img {
+        width: 33.3333333333%;
+    }
+    
+    /*
+    CONTATO
+    */
+    
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #contato{
+    padding-top: 80px;
+    width: 70%;
+    margin: 0 auto;
+}
+ #contato input[type=text]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;    
+}
+ #contato textarea{
+    width: 100%;
+    padding: 10px 10px 40px 10px;
+    border-radius: 5px;
+    border: 1px solid #;
+    margin-bottom: 20px;
+    resize: none;
+    text-color:#bdc60f;
+
+}
+ 
+    }
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
